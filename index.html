@@ -9,83 +9,119 @@
   </head>
 
   <body>
-    <div class="container text-center">
-      <div class="card">
-        <img class="img-circle img-border" src="images/profile_pic.jpg" alt="Alexis Pipieri" height="150">
-        <h1>Alexis Pipieri</h1>
-        <h2>FullStack Developer</h2>
-        <p>
-          Hi, my name is Alexis, I'm learning to code @ <a href="www.lewagon.com">Le Wagon</a>
-        </p>
-        <ul class="list-inline">
-          <li>
-            <a href="https://www.facebook.com/alexis.pipieri" target="_blank" class="social-network">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/Pips166" target="_blank" class="social-network">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/alexis-pipieri" target="_blank" class="social-network">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>My favorite sports</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td class="tb-padding">
-                <img class="img-border img-radius" src="images/surf.jpg" alt="surf" width="300">
-              </td>
-              <td class="tb-padding">
-                <h3>Surfing</h3>
-                <p>
-                  Surfing is a surface water sport in which the wave rider, referred to as a surfer, rides on the forward or deep face of a moving wave, which is usually carrying the surfer towards the shore
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="tb-padding">
-                <img class="img-border img-radius" src="images/rugby.jpg" alt="rugby" width="300">
-              </td>
-              <td class="tb-padding">
-                <h3>Rugby</h3>
-                <p>
-                  Rugby union, commonly known in most of the world as rugby, is a contact team sport which originated in England in the first half of the 19th century. One of the two codes of rugby football, it is based on running with the ball in hand.
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card">
-        <h2>About this page</h2>
-        <p>
-          This page has been coded during the <a href="https://lewagon.org/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.
-        </p>
-        <ul class="list-inline">
-         <li>
-           <a href="#">
-             <i class="fa fa-heart"></i>
-           </a>
-         </li>
-         <li>
-           <a href="#">
-             <i class="fa fa-share"></i>
-           </a>
-         </li>
-         <li>
-           <a href="#">
-             <i class="fa fa-star"></i>
-           </a>
-         </li>
-        </ul>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a href="#summary" class="social side-icons">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#love" class="social side-icons">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="social side-icons">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#copyright" class="social side-icons">
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="page-content">
+      <div class="container text-center">
+        <div class="card" id="summary">
+          <img class="img-circle img-border" src="images/profile_pic.jpg" alt="Alexis Pipieri" height="150">
+          <h1>Alexis Pipieri</h1>
+          <h2>FullStack Developer</h2>
+          <p>
+            Hi, my name is Alexis, I'm learning to code @ <a href="www.lewagon.com">Le Wagon</a>
+          </p>
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.facebook.com/alexis.pipieri" target="_blank" class="social">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Pips166" target="_blank" class="social">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/alexis-pipieri" target="_blank" class="social">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="card" id="love">
+          <h2>My favorite sports</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td class="tb-padding">
+                  <img class="img-border img-radius" src="images/surf.jpg" alt="surf" width="300">
+                </td>
+                <td class="tb-padding">
+                  <h3>Surfing</h3>
+                  <p>
+                    Surfing is a surface water sport in which the wave rider, referred to as a surfer, rides on the forward or deep face of a moving wave, which is usually carrying the surfer towards the shore
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="tb-padding">
+                  <img class="img-border img-radius" src="images/rugby.jpg" alt="rugby" width="300">
+                </td>
+                <td class="tb-padding">
+                  <h3>Rugby</h3>
+                  <p>
+                    Rugby union, commonly known in most of the world as rugby, is a contact team sport which originated in England in the first half of the 19th century. One of the two codes of rugby football, it is based on running with the ball in hand.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card" id="contact">
+          <h2>Get in touch!</h2>
+          <form action="/">
+            email:
+            <input type="text" name="email">
+            <input type="submit" value="Submit">
+          </form>
+
+        </div>
+        <div class="card" id="copyright">
+          <h2>About this page</h2>
+          <p>
+            This page has been coded during the <a href="https://lewagon.org/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.
+          </p>
+          <ul class="list-inline">
+           <li>
+             <a href="#">
+               <i class="fa fa-heart social"></i>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <i class="fa fa-share social"></i>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <i class="fa fa-star social"></i>
+             </a>
+           </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
